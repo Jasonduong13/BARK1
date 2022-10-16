@@ -1,11 +1,11 @@
 <head>
     <title> Main Screen </title>
     <link rel="stylesheet" type="text/css"   href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- COCKROACH: gdhF3hKeE5OBWHsJzpRG1A -->
 </head>
 <body>
     
-
 
     <div class = "main_container">
         <div class = "title_box">
@@ -18,20 +18,30 @@
             </div>
             <div class = "column_2 column_container">
                 <div class = "form_box">
+
+                    
                     <h1>FORM</h1>
-                    <form action="/action_page.php">
-                        <label for="fname">Event</label>
-                        <input type="text" id="fname" name="fname"><br><br>
-                        <label for="lname">Address</label>
-                        <input type="text" id="lname" name="lname"><br><br>
-                        <label for="lname">City</label>
-                        <input type="text" id="lname" name="lname"><br><br>
-                        <label for="lname">State</label>
-                        <input type="text" id="lname" name="lname"><br><br>
-                        <label for="lname">Zip</label>
-                        <input type="text" id="lname" name="lname"><br><br>
-                        <input type="submit" value="Submit">
-                      </form>
+
+
+                    Address:
+                    <input type="text" id="address-input">
+                    City:
+                    <input type="text" id="city-input">
+                    State:
+                    <input type="text" id="state-input">
+                    Postcode:
+                    <input type="text" id="postcode-input">
+                    <input type="submit" id="submit" value="generate" onClick="AlertLatLng()">
+
+
+                    <p id="result"></p>
+
+                    <button onclick="foo()">Click me</button>
+
+                    
+
+
+
                 </div>
 
             </div>
@@ -46,5 +56,9 @@
 
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyA5CebZl0-ynyMHrgE8T2Ohr_TqtHq_Gpo" type="text/javascript"></script>
     <script src="js/map.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/data.js"></script>
+
+
 
 </body>
