@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+.title_box {
+    
+    background-color: rgb(66, 105, 102);
+    height: 10vh;
+}
+
+.title {
+    font-size: 350%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 2.5vh;
+}
+
+.main_container {
+    height: 90vh;
+    background-color: rgb(224, 167, 167);
+}
+
+.column_container{
+    float: left;
+    margin-top: 5vh;
+}
+
+.column_1 {
+    width: 60%;
+    height: 80%;
+    background-color: rgb(87, 74, 74);
+
+}
+
+.map_box {
+    height: 100%;
+    width: 100%;
+}
+#map {
+    width: 90%;
+    height: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.column_2 {
+    width: 40%;
+    height: 80%;
+    background-color: rgb(180, 153, 153);
+}
+
+.form_box {
+    background-color: rgb(126, 99, 99);
+    height: 35vh;
+}
+
