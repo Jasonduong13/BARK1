@@ -28,6 +28,7 @@ function AlertLatLng() {
 
     var postcode = document.getElementById('postcode-input').value;
 
+
     var address = street_address2 + ",+" + city2 + ",+" + state2;
     let url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=AIzaSyA5CebZl0-ynyMHrgE8T2Ohr_TqtHq_Gpo";
 
@@ -40,6 +41,10 @@ function AlertLatLng() {
 
       var result = "The latitude is " +latitude + " and longitude is " + longitude;
       document.getElementById('result').innerHTML=result;
+
+    var location2 = localStorage.getItem("locaiton1 ");  
+    var num = length(location2)+1
+    location2.append(["catcall" , latitude, longitude, num])
 
     });       
 

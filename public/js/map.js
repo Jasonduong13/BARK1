@@ -1,9 +1,11 @@
 var locations = [
-    ['Cat_call_1', 37.8638966521624, -122.25743564415112, 1],
-    ['Cat_call_2', 37.86652233792536, -122.25881966400979, 2],
-    ['Cat_call_3', 47.09399, 15.40548, 3],
+    //['Cat_call_1', 37.8638966521624, -122.25743564415112, 1],
+    //['Cat_call_2', 37.86652233792536, -122.25881966400979, 2],
+    //['Cat_call_3', 47.09399, 15.40548, 3],
 
 ];
+
+localStorage.setItem("locations1", locations);  
 
 var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
